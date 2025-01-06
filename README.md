@@ -61,4 +61,6 @@
 # 아키텍처(상세)
 ![sli0](https://github.com/ccommit-dev/Board-Server/assets/77635521/bc8eb387-ec9b-4a51-9c55-80332aa88547)
 
-
+---
+# 성능테스트
+![img.png](stress_test.png)
