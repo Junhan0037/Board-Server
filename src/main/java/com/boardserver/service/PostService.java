@@ -60,6 +60,7 @@ public class PostService {
         return postDTOList;
     }
 
+    @CacheEvict(value = "getProducts", allEntries = true)
     public void updateProducts(PostEntity postDTO) {
         if (postDTO != null && postDTO.getId() != 0 && postDTO.getUserId() != 0) {
             try {
@@ -74,6 +75,7 @@ public class PostService {
         }
     }
 
+    @CacheEvict(value = "getProducts", allEntries = true)
     public void deleteProduct(int userId, int productId) {
         if (userId != 0 && productId != 0) {
             try {
